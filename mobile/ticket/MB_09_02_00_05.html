@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Wavve(웨이브)</title>
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="세상 얕은 콘텐츠부터 세상 딥한 콘텐츠까지 JUST DIVE! Wavve">
+	<meta name="keywords" content="푹, pooq, 푹티비, 실시간TV, 방송VOD, 다시보기, MBC온에어, SBS온에어, KBS온에어" />
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/ticket.css">
+
+	<script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<link rel="stylesheet" href="../css/swiper.css">
+</head>
+<body class="bg-gray">
+	<div class="wrap pb25">
+		<header>
+			<div class="component-header">
+				<a href="#" class="component-back">
+                    <span class="a11y-hidden">뒤로 가기</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"/>
+                            <path fill="#FFF" d="M7.1 12l9.546 9.546a.5.5 0 1 1-.707.707l-9.9-9.9a.498.498 0 0 1 0-.707l9.9-9.899a.5.5 0 1 1 .707.707L7.101 12z"/>
+                        </g>
+                    </svg>
+                </a>
+				<h1>Wavve 결제 팝업</h1>
+			</div>
+		</header>
+
+		<div class="ticket-wrap">
+			<div class="ticket-one">
+				<p class="ticket-one-tit">단건 구매</p>
+				<p class="ticket-one-text">7일간 스트리밍 및 4회 다운로드 가능</p>
+
+				<div class="ticket-one-bt">
+					<p class="ticket-one-price"><span>4,000</span>/7일</p>
+					<a href="#" class="ticket-buy-btn">구매하기</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="ticket-wrap">
+			<h2 class="m-ticket-title">패키지</h2>
+			<table class="ticket-layout ticket-purple ticket-package">
+				<caption class="blind">모바일+PC HD시청 이용권 안내</caption>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<p class="m-ticket-title">영화 (자막) 가디언즈 오브 갤럭시VOL.2 +부가영상 패키지</p>
+							<p class="m-ticket-sub-title">4대 기기에서 영구적으로 스트리밍 이용가능 (다운로드 미제공)</p>
+							<p class="ticket-price">$10.99 <span class="ticket-day">/영구소장</span></p>
+						</th>
+						<td class="vab">
+							<a href="#" class="ticket-buy-btn">구매하기</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="ticket-layout ticket-purple ticket-package">
+				<caption class="blind">모바일+PC HD시청 이용권 안내</caption>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<p class="m-ticket-title">영화 (자막) 가디언즈 오브 갤럭시VOL.2 +부가영상 패키지</p>
+							<p class="m-ticket-sub-title">4대 기기에서 영구적으로 스트리밍 이용가능 (다운로드 미제공)</p>
+							<p class="ticket-price">$10.99 <span class="ticket-day">/영구소장</span></p>
+						</th>
+						<td class="vab">
+							<a href="#" class="ticket-buy-btn">구매하기</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div><!--ticket-wrap-->
+
+		<div class="ticket-wrap">
+			<h2 class="m-ticket-title">pooq 이용권</h2>
+			<!--
+			 button.ticket-list-btn 클릭시	.ticket-list-wrap 에 ticket-list-open 클래스 추가
+			-->
+			<div class="ticket-list-wrap ticket-skyblue ticket-list-open">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">방송 월정액</p>
+					<p class="ticket-list-btn-text">방송(LIVE+VOD)+VOD 10회 다운로드</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">pooq 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">9,900원</span>6,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC HD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">10,900원</span>7,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV FHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">14,900원</span>10,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV UHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">23,800원</span>19,800원</p>
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+
+
+			<div class="ticket-list-wrap ticket-skyblue">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">슈퍼팩 Plus (방송+영화+VOD 무제한다운로드)</p>
+					<p class="ticket-list-btn-text">방송(LIVE+VOD)+VOD 무제한 다운로드+PLAYY영화무제한</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">슈퍼팩 Plus (방송+영화+VOD 무제한다운로드) 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">17,900원</span>14,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+
+
+			<div class="ticket-list-wrap ticket-purple">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">PLAYY영화 월정액</p>
+					<p class="ticket-list-btn-text">PLAYY영화 무제한 스트리밍</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">슈퍼팩 Plus (방송+영화+VOD 무제한다운로드) 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">12,900원</span>9,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+		</div><!--ticket-wrap-->
+
+		<div class="ticket-wrap">
+			<h2 class="m-ticket-title">벅스 제휴 이용권</h2>
+			<!--
+			 button.ticket-list-btn 클릭시	.ticket-list-wrap 에 ticket-list-open 클래스 추가
+			-->
+			<div class="ticket-list-wrap ticket-red">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">pooq 방송 x Bugs 듣기+저장</p>
+					<p class="ticket-list-btn-text">방송(LIVE+VOD) + VOD 10회 다운로드 + PLAYY영화무제한x벅스 모바일 듣기+저장</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">pooq 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">9,900원</span>6,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC HD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">10,900원</span>7,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV FHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">14,900원</span>10,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV UHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">23,800원</span>19,800원</p>
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+
+
+			<div class="ticket-list-wrap ticket-red">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">pooq 방송 x Bugs 듣기+저장</p>
+					<p class="ticket-list-btn-text">방송(LIVE+VOD) + VOD 10회 다운로드 + PLAYY영화무제한x벅스 모바일 듣기+저장</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">pooq 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">9,900원</span>6,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC HD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">10,900원</span>7,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV FHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">14,900원</span>10,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV UHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">23,800원</span>19,800원</p>
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+		</div><!--ticket-wrap-->
+
+		<div class="ticket-wrap">
+			<h2 class="m-ticket-title">아카데미 이용권</h2>
+			<!--
+			 button.ticket-list-btn 클릭시	.ticket-list-wrap 에 ticket-list-open 클래스 추가
+			-->
+			<div class="ticket-list-wrap ticket-red">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">pooq 방송 x Bugs 듣기+저장</p>
+					<p class="ticket-list-btn-text">방송(LIVE+VOD) + VOD 10회 다운로드 + PLAYY영화무제한x벅스 모바일 듣기+저장</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">pooq 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">9,900원</span>6,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC HD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">10,900원</span>7,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV FHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">14,900원</span>10,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV UHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">23,800원</span>19,800원</p>
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+
+
+			<div class="ticket-list-wrap ticket-red">
+				<button class="ticket-list-btn">
+					<p class="ticket-list-btn-tit">pooq 방송 x Bugs 듣기+저장</p>
+					<p class="ticket-list-btn-text">방송(LIVE+VOD) + VOD 10회 다운로드 + PLAYY영화무제한x벅스 모바일 듣기+저장</p>
+				</button>
+				<table class="ticket-list-layout">
+					<caption class="blind">pooq 이용권 안내</caption>
+					<tbody>
+						<tr class="bb-none">
+							<th scope="row" class="vat">
+								<p class="ticket-sub-title">자동결제/부가세 포함</p>
+							</th>
+							<td>
+								<div class="number-people">
+									<button><img src="../images/common/user-minus.png" alt="인원 제외 불가능"/></button>
+									<span class="number-people-text01">1회선</span>
+									<button><img src="../images/common/user-add-active.png" alt="인원 추가"/></button>
+									<p class="number-people-text02">동시 이용자수 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일 기기 전용 HD 시청</p>
+								<p class="ticket-price"><span class="ticket-sale">9,900원</span>6,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC HD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">10,900원</span>7,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV FHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">14,900원</span>10,900원</p>
+
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p class="ticket-title">모바일+PC+TV UHD시청 </p>
+								<p class="ticket-price"><span class="ticket-sale">23,800원</span>19,800원</p>
+							</th>
+							<td><a href="#" class="ticket-buy-btn">구매하기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--ticket-list-wrap//-->
+		</div><!--ticket-wrap-->
+
+		<div class="payment-noti-wrap">
+			<div class="ticket-noti-wrap">
+        <p class="dot-text"><span>12개월 이용권 할인 프로모션 기간에 구매 시 첫 해에만 추가 할인 금액으로 결제되고, 12개월 후에는 16% 할인된 금액으로 연 1회 정기 결제됩니다.</span></p>
+				<p class="dot-text"><span>Wavve 서비스는 저작권 문제로 해외에서 시청하실 수 없습니다.</span></p>
+				<p class="dot-text"><span>동시시청은 계정당 허용 가능한 회선만큼 동시에 여러 기기에서 시청하실 수 있는 상품입니다. 1회선인 경우 동시시청을 할 수 없습니다.</span></p>
+				<p class="dot-text"><span>일부 콘텐츠는 저작권자의 요청에 따라 LIVE 및 VOD 서비스가 제공되지 않을 수 있습니다.</span></p>
+				<p class="dot-text"><span>자동결제 시 이용기간 중 결제 당일을 제외하고 언제든지 자동결제를 해지하실 수 있습니다. </span></p>
+				<p class="dot-text"><span>기타 자세한 사항은 이용권 안내 페이지를 참고해 주세요. </span></p>
+				<p class="dot-text"><span>미사용 상품은 구매 후 7일 내 청약철회 가능하며, 법정대리인의 동의를 받지 않은 미성년자 거래는 취소 가능합니다.</span></p>
+			</div>
+
+			<input type="checkbox" id="payment-noti-more" class="noti-more-btn" ><label for="payment-noti-more"></label>
+
+			<div class="ticket-noti-more">
+				<p class="dot-text"><span>콘텐츠 제공사의 사정에 따라 일부 콘텐츠는 FHD 화질을 지원하지 않을 수 있습니다.</span></p>
+				<p class="dot-text"><span>UHD화질은 스마트TV기기에서만 시청 가능합니다.</span></p>
+				<p class="dot-text"><span>다운로드 이용권은 방송VOD 중 원하시는 VOD를 선택하여 다운로드 하실 수 있으며, 잔여 다운로드 횟수는 이월되지 않습니다.</span></p>
+				<p class="dot-text"><span>다운로드 무제한 이용권은 모바일 기기에서만 무제한 다운 가능하며, PC에서는 최대 30회까지 다운로드 가능합니다.</span></p>
+				<p class="dot-text"><span>이용권 구매 시 지상파, 종편을 포함한 해외채널, 오디오 채널 등 70여 개 전체 LIVE채널을 광고 없이 시청할 수 있습니다.</span></p>
+				<p class="dot-text"><span>제휴 이용권은 할인 혜택이 적용되어 있으므로 추가 혜택(페이백, 기타 할인 등)이 적용되지 않습니다.</span></p>
+			</div>
+		</div><!--payment-noti-wrap-->
+
+	</div><!--wrap//-->
+
+ </body>
+</html>

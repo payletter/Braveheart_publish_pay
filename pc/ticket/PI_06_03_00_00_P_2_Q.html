@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wavve(웨이브)</title>
+	<meta name="description" content="세상 얕은 콘텐츠부터 세상 딥한 콘텐츠까지 JUST DIVE! Wavve">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/ticket.css">
+</head>
+	<script src="https://unpkg.com/vue"></script>
+	<body>
+
+		<div class="ticket-popup-wrap">
+
+			<h3 class="popup-header">Wavve 상품 구매</h3>
+			<div class="popup-body">
+				<div class="popup-content">
+					<div class="popup-top">
+						<img src="../images/ticket/ico-receipt.png" alt="" />
+						<p>결제수단 변경이 완료되었습니다.</p>
+					</div>
+
+					<div class="popup-gray">
+						<table>
+							<caption class="blind">코인충전 완료 내역</caption>
+							<colgroup>
+								<col width="148px">
+								<col width="*">
+							</colgroup>
+							<tr>
+								<th scope="row"><p class="popup-text01"><strong>기존 결제수단</strong></p></th>
+								<td><p class="popup-text01">신용카드 (KB 국민카드)</p></td>
+							</tr>
+							<tr>
+								<th scope="row"><p class="popup-text01"><strong>변경 결제수단</strong></p></th>
+								<td><p class="popup-text01"><strong>신용카드 (KB 신한카드)</strong></p></td>
+							</tr>
+							<tr>
+								<th scope="row"><p class="popup-text01"><strong>다음 자동 결제일</strong></p></th>
+								<td><p class="popup-text01"><strong>2017.11.11</strong></p></td>
+							</tr>
+						</table>
+					</div>
+				</div><!--popup-content//-->
+				<ul class="popup-btn-wrap">
+					<li><button @click="showModal = false" class="btn-fill-purple">확인</button></li>
+				</ul>
+			</div>
+			<div class="popup-noti">
+				<p class="dot-text"><span>자동결제는 1개월 단위로 구매하신 날과 매월 동일한 날짜에 결제가 이루어지며 해당 일자가 없는 경우<br />해당 월의 말일에 결제가 이루어집니다.</span></p>
+				<p class="dot-text"><span>회원님의 사정으로 인해 결제사에서 승인이 되지 않으면 자동결제가 자동 해지될 수 있으며 자동결제 성공 및 자동결제 실패 시 이메일 및 SMS로 안내해 드립니다.</span></p>
+				<p class="dot-text"><span>미사용 상품은 구매 후 7일 내 청약철회 가능하며, 법정대리인의 동의를 받지 않은 미성년자 거래는 취소 가능합니다.
+					<input type="checkbox" id="more-noti"  class="more-noti-btn">
+					<label for="more-noti"><!--css 처리--></label>
+
+					<span class="noti-more-wrap">
+						<span class="dot-text02"><span>회원이 유료 결제 후 사용하지 않은 상품은 구매일 기준 7일 내 청약 철회가 가능합니다. </span></span>
+						<span class="dot-text02"><span>고객센터>1:1문의하기 메뉴를 통해 청약철회 의사를 표시할 수 있으며, 접수일로부터 3영업일 이내 결제 취소 또는 현금 환불해 드립니다. 다만, 각 호의 경우에는 결제취소처리가 불가능합니다.<br/>
+						① 이벤트, 쿠폰, 보상 등 결제수단이 무료로 지급된 경우<br/>
+						② 해당 기간 내에 사용내역이 있을 경우<br/>
+						③ 해당 결제수단에 따른 결제취소 가능기간을 경과한 경우 </span></span>
+						<span class="dot-text02"><span>만 20세 미만의 미성년자의 유료서비스 이용은 법정대리인이 이를 취소할 수 있습니다. (단, 결제 수단의 명의자가 성년인 경우에는 취소 제한)</span></span>
+					</span>
+				</span></p>
+			</div>
+		</div>
+
+
+	</body>
+</html>

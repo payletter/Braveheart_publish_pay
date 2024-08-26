@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Wavve(웨이브)</title>
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="세상 얕은 콘텐츠부터 세상 딥한 콘텐츠까지 JUST DIVE! Wavve">
+	<meta name="keywords" content="푹, pooq, 푹티비, 실시간TV, 방송VOD, 다시보기, MBC온에어, SBS온에어, KBS온에어" />
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/ticket.css">
+</head>
+<body class="bg-gray">
+	<div class="wrap quick-payment-wrap">
+		<header>
+			<div class="component-header">
+                <a href="#" class="component-back">
+                    <span class="a11y-hidden">뒤로 가기</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"/>
+                            <path fill="#FFF" d="M7.1 12l9.546 9.546a.5.5 0 1 1-.707.707l-9.9-9.9a.498.498 0 0 1 0-.707l9.9-9.899a.5.5 0 1 1 .707.707L7.101 12z"/>
+                        </g>
+                    </svg>
+                </a>
+				<h1>빠른결제 카드 관리</h1>
+			</div>
+		</header>
+
+		<div class="payment-final-text">
+			<p>
+                <span>회원님의 회원정보를 안전하게 보호하기 위해</span>
+                <span>현재 PIN 번호를 입력해주세요.</span>
+            </p>
+		</div>
+
+        <div class="pay-pin-box">
+            <fieldset>
+                <legend class="blind">빠른결제 별칭, PIN 입력 영역</legend>
+                <div class="password">
+                    <div class="pw-each">
+                        <label for="PIN1" class="blind">비밀번호 1</label>
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="PIN1" class="pw-inputs" name="password" maxlength="1" required placeholder="&#9679;" oninput="maxLengthCheck(this)"/>
+                        <span class="pw-img"></span>
+                    </div>
+                    <div class="pw-each">
+                        <label for="PIN2" class="blind">비밀번호 2</label>
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="PIN2" class="pw-inputs" name="password" maxlength="1" required placeholder="&#9679;" oninput="maxLengthCheck(this)"/>
+                        <span class="pw-img"></span>
+                    </div>
+                    <div class="pw-each">
+                        <label for="PIN3" class="blind">비밀번호 3</label>
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="PIN3" class="pw-inputs" name="password" maxlength="1" required placeholder="&#9679;" oninput="maxLengthCheck(this)"/>
+                        <span class="pw-img"></span>
+                    </div>
+                    <div class="pw-each">
+                        <label for="PIN4" class="blind">비밀번호 4</label>
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="PIN4" class="pw-inputs" name="password" maxlength="1" required placeholder="&#9679;" oninput="maxLengthCheck(this)"/>
+                        <span class="pw-img"></span>
+                    </div>
+                </div>
+            </fieldset>
+            <a href="#" class="find-pin">PIN 번호를 잊으셨나요?</a>
+        </div>
+
+        <div class="btn-wrap">
+            <ul class="two-btn">
+                <li><a href="#" class="btn-black">취소</a></li>
+                <li><a href="#" class="btn-purple">다음</a></li>
+            </ul>
+        </div>
+
+	</div><!--wrap//-->
+    <script type="text/javascript" src="../js/pin-code.js"></script>
+</body>
+</html>

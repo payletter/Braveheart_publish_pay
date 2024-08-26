@@ -1,0 +1,303 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wavve(웨이브)</title>
+    <meta name="description" content="세상 얕은 콘텐츠부터 세상 딥한 콘텐츠까지 JUST DIVE! Wavve">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/ticket.css">
+</head>
+<script src="https://unpkg.com/vue"></script>
+
+
+<script type="text/x-template" id="popup-noti">
+  <transition name="modal02">
+    <div class="modal-mask">
+      <div class="modal-wrapper02">
+		<button class="modal-default-button" @click="$emit('close')"><img src="../images/common/btn-popup-close.png" alt="팝업닫기"/></button>
+        <div class="modal-container">
+          <div class="modal02-body"><slot name="body02"></slot></div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</script>
+
+
+	<body>
+		<div class="ticket-popup-wrap">
+			<h3 class="popup-header">Wavve 상품 구매</h3>
+			<div class="popup-body">
+				<div class="popup-content">
+                    <table class="purchase-desc">
+                        <h2 class="popup-tit">결제내용</h2>
+                        <colgroup>
+                            <col width="130px">
+                            <col width="190px">
+                            <col width="130px">
+                            <col width="190px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" class="purchase-name">
+                                    <p class="popup-text01"><strong>[자동결제] 방송 월정액 방송(LIVE+VOD)+VOD 10회 다운로드</strong></p>
+                                    <p class="popup-text02">모바일 전용(HD시청)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이용기간</th>
+                                <td colspan="3"><p class="popup-text01">2018.02.02~2018.03.02 (1개월)</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">금액 (매월)</th>
+                                <td colspan="3"><p class="popup-price">6,900원</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--popup-content//-->
+
+				<div class="popup-content">
+					<div class="popup-event-banner">
+						<img src="../images/temp/popup-banner-event-payco.png" alt=""/>
+						<div class="blind">
+							<!--이미지 내용 접근성 관련-->
+							<h3>payco로 지금 Wavve 이용권을 결제하면 핵이득!</h3>
+							<p>payco 최초 정기 결제시 4,000원 할인!</p>
+							<p>이용 중인 상품을 변경할 때에도 Wavve에서 payco 결제가 처음이라면 할인 받으실 수 있습니다.</p>
+							<p>payco 결제수단 중 '신용카드'로 결제 시에만 할이 혜택이 제공됩니다.</p>
+						</div>
+					</div>
+				</div><!--popup-content//-->
+
+				<div class="popup-content" id="payment-wrap">
+                    <h2 class="popup-tit">결제수단 선택</h2>
+
+                    <div class="method-quick">
+
+                        <input type="radio" id="method-quick" name="payment-mothod" class="method-quick-hd ">
+                        <label for="method-quick">빠른결제</label>
+
+                        <div class="method-quick-toggle">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="card-selected">
+                                            <span class="swiper-card card-citi">
+                                                <span class="swiper-card-info">
+                                                    <span class="swiper-card-name">길동이카드카드</span>
+                                                    <span class="swiper-card-num">**** **** **** 1234</span>
+                                                </span>
+                                                <span class="top-check"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="card-selected">
+                                            <span class="swiper-card card-hana">
+                                                <span class="swiper-card-info">
+                                                    <span class="swiper-card-name">길동이카드카드</span>
+                                                    <span class="swiper-card-num">**** **** **** 1234</span>
+                                                </span>
+                                                <span class="top-check"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="card-selected">
+                                            <span class="swiper-card card-nonghyup">
+                                                <span class="swiper-card-info">
+                                                    <span class="swiper-card-name">길동이카드카드</span>
+                                                    <span class="swiper-card-num">**** **** **** 1234</span>
+                                                </span>
+                                                <span class="top-check"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="card-selected">
+                                            <span class="swiper-card card-kb">
+                                                <span class="swiper-card-info">
+                                                    <span class="swiper-card-name">길동이카드카드</span>
+                                                    <span class="swiper-card-num">**** **** **** 1234</span>
+                                                </span>
+                                                <span class="top-check"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="card-selected">
+                                            <span class="swiper-card card-suhyup">
+                                                <span class="swiper-card-info">
+                                                    <span class="swiper-card-name">길동이카드카드</span>
+                                                    <span class="swiper-card-num">**** **** **** 1234</span>
+                                                </span>
+                                                <span class="top-check"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="card-exclamation">
+                                <ul>
+                                    <li>등록된 카드는 [회원정보]에서 관리하실 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-others">
+
+                        <input type="radio" id="method-others" name="payment-mothod" class="method-others-hd">
+                        <label for="method-others">다른 결제수단</label>
+
+                        <ul class="method-others-toggle">
+                            <li>
+                                <a href="#">
+                                    <span class="method-others-each method-credit"></span>
+                                    <span>신용카드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="method-others-each method-phone"></span>
+                                    <span>휴대폰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="method-others-each method-naver"></span>
+                                    <span class="blind">네이버페이</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="method-others-each method-kakao"></span>
+                                    <span class="blind">카카오페이</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="method-others-each method-payco"></span>
+                                    <span class="blind">페이코</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="method-others-each method-paynow"></span>
+                                    <span class="blind">페이나우</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="check-style purchase-check">
+                        <input type="checkbox" class="check-purple" id="ag-check"><label for="ag-check">매월 자동 결제에 동의합니다.</label>
+                    </div>
+                </div><!--popup-content//-->
+
+
+				<ul class="popup-btn-wrap">
+					<li><button class="btn-br-gray" >취소</button></li>
+					<li><button @click="showModal02 = true"  class="btn-fill-purple">다음</button>
+						<div class="ticket-popup-wrap">
+						  <modal02 v-if="showModal02" @close="showModal02 = false">
+							<div slot="body02">
+								<div class="popup-content">
+									<div class="popup-top">
+										<img src="../images/ticket/error.png" alt=""/>
+										<p>선택하신 이용권이<br/>아래 이용권과 중복됩니다.</p>
+									</div>
+									<div class="popup-gray">
+										<table>
+											<caption class="blind">사용중인 이용권 안내</caption>
+											<colgroup>
+												<col width="98px">
+												<col width="*">
+											</colgroup>
+											<tr>
+												<th scope="row"><p class="popup-text01"><strong>상품명</strong></p></th>
+												<td>
+													<p class="popup-text02 mt0">방송(LIVE+VOD)+VOD 10회 다운로드</p>
+													<p class="popup-text02">모바일 + PC + TV<em><!-- dotted --></em>FHD시청</p>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><p class="popup-text01"><strong>이용기간</strong></p></th>
+												<td><p class="popup-text01">2017.10.00 00:00 ~ 2022.10.00 00:00</p></td>
+											</tr>
+										</table>
+									</div>
+                                    <p class="modal02-text">
+                                        중복되는 기존 이용권은 <strong>자동으로 해지</strong>되며
+                                        <br>
+                                        <strong>이용 기간/다운로드 건수 만큼 차감하고 남은 금액에 대해 코인으로 적립</strong>됩니다.
+                                    </p>
+                                    <ul class="modal-exclamation">
+                                        <li> 유료상품 이용약관 제12조[환불정책] 3항에 따름</li>
+                                        <li> 다운로드는 건당 차감으로 이용권 금액보다 초과 시 환불 금액이 없을 수 있습니다</li>
+                                        <li> 이용권 변경 1일 1회 가능</li>
+                                    </ul>								</div><!--popup-content//-->
+								<ul class="popup-btn-wrap">
+									<li><button @click="showModal02 = false" class="btn-fill-purple">확인</button></li>
+								</ul>
+							</div>
+						  </modal02>
+						</div><!--ticket-popup-wrap//-->
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="popup-noti">
+                <p class="dot-text"><span>12개월 이용권 할인 프로모션 기간에 구매 시 첫 해에만 추가 할인 금액으로 결제되고, 12개월 후에는 16% 할인된 금액으로 연 1회 정기 결제됩니다.</span></p>
+				<p class="dot-text"><span>Wavve 서비스는 저작권 문제로 해외에서 시청하실 수 없습니다.</span></p>
+				<p class="dot-text"><span>동시접속 상품은 한 계정당 구매하신 회선만큼 동시에 여러 기기에서 시청하실 수 있는 상품입니다. 1회선 이용 시에는 동시접속이 차단됩니다. </span></p>
+				<p class="dot-text"><span>일부 콘텐츠는 저작권자의 요청에 따라 LIVE 및 VOD 서비스가 제공되지 않을 수 있습니다.</span></p>
+				<p class="dot-text"><span>자동결제 시 이용기간 중 결제 당일을 제외하고 언제든지 자동결제를 해지하실 수 있습니다. </span></p>
+				<p class="dot-text"><span>기타 자세한 사항은 <a href="#" class="noti-more">이용권 안내 페이지</a>를 참고해 주세요. </span></p>
+				<p class="dot-text"><span>미사용 상품은 구매 후 7일 내 청약철회 가능하며, 법정대리인의 동의를 받지 않은 미성년자 거래는 취소 가능합니다.
+					<input type="checkbox" id="more-noti"  class="more-noti-btn">
+					<label for="more-noti"><!--css 처리--></label>
+
+					<span class="noti-more-wrap">
+						<span class="dot-text02"><span>회원이 유료 결제 후 사용하지 않은 상품은 구매일 기준 7일 내 청약 철회가 가능합니다. </span></span>
+						<span class="dot-text02"><span>고객센터>1:1문의하기 메뉴를 통해 청약철회 의사를 표시할 수 있으며, 접수일로부터 3영업일 이내 결제 취소 또는 현금 환불해 드립니다. 다만, 각 호의 경우에는 결제취소처리가 불가능합니다.<br/>
+						① 이벤트, 쿠폰, 보상 등 결제수단이 무료로 지급된 경우<br/>
+						② 해당 기간 내에 사용내역이 있을 경우<br/>
+						③ 해당 결제수단에 따른 결제취소 가능기간을 경과한 경우 </span></span>
+						<span class="dot-text02"><span>만 20세 미만의 미성년자의 유료서비스 이용은 법정대리인이 이를 취소할 수 있습니다. (단, 결제 수단의 명의자가 성년인 경우에는 취소 제한)</span></span>
+					</span>
+				</span></p>
+			</div>
+
+		  </modal>
+		</div>
+        <script type="text/javascript" src="../js/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/swiper.js"></script>
+        <script type="text/javascript" src="../js/pay-method.js"></script>
+        <script>
+            //modal popup
+            Vue.component('modal02', {
+              template: '#popup-noti'
+            })
+
+            // start app
+            new Vue({
+              el: '.ticket-popup-wrap',
+              data: {
+                showModal02: true
+              }
+            });
+        </script>
+	</body>
+</html>

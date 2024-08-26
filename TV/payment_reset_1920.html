@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wavve(웨이브)</title>
+</head>
+<style>
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, figure, pre {
+  margin:0;
+  padding:0;
+}
+html, body {
+  background-color: #1b1b1b;
+  font-family: 'NotoSans', sans-serif;
+}
+.blind {
+  overflow:hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+  font-size: 1px;
+  opacity: 0;
+  line-height: 1px;
+}
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 150px 0 100px;
+  min-height: 830px;
+  color: #eee;
+  text-align: center;
+}
+.wrap h1 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 57px;
+}
+.pin-dsc {
+  margin-top: 40px;
+  font-size: 28px;
+  word-break: break-all;
+  line-height: 33px;
+}
+.inpt-box {
+  width: 350px;
+  margin: 40px auto 0;
+}
+.inpt-box .inpt-pin {
+  width: 294px;
+  height: 72px;
+  padding: 0 28px;
+  border: 0;
+  background-color: #eee;
+  font-size: 48px;
+  color: #1b1b1b;
+}
+.num-pad {
+  width: 704px;
+  margin: 60px auto 0;
+  font-size: 0;
+}
+.num-pad .btn {
+  width: 176px;
+  height: 66px;
+  background-color: #1b1b1b;
+  margin: -1px 0 0 -1px;
+  border: 1px solid #2f2f2f;
+  font-size: 32px;
+  color: #eee;
+  cursor: pointer;
+  vertical-align: top;
+}
+.num-pad .btn.btn-del {
+  width: 351px;
+}
+.num-pad .btn.btn-del:before {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(./images/btn-del-36.png);
+  background-size: 36px auto;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: '';
+}
+.num-pad .btn:active,
+.num-pad .btn.active {
+  position: relative;
+  background-color: #eee;
+  border-color: #eee;
+  color: #101010;
+  font-weight: 700;
+  z-index: 10;
+}
+.btn-box {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.btn-box .btn {
+  width: 360px;
+  height: 80px;
+  margin: 0 4px;
+  font-size: 28px;
+  background-color: #2f2f2f;
+  border: 0;
+  color: #eee;
+  cursor: pointer;
+  vertical-align: top;
+}
+.btn-box .btn:active,
+.btn-box .btn.active {
+  color: #101010;
+  background-color: #eee;
+}
+</style>
+<body>
+  <div class="wrap">
+    <h1>PIN 번호를 재설정</h1>
+    <p class="pin-dsc">고객님의 안전한 결제를 위하여 PIN 번호를 재설정해주세요.</p>
+    <div class="inpt-box">
+      <input class="inpt-pin" type="password" id="pin" name="pin">
+    </div>
+    <div class="num-pad">
+      <!-- [D] 버튼이 클릭되면 active 클래스 추가 -->
+      <button class="btn active" type="button">1</button>
+      <button class="btn" type="button">2</button>
+      <button class="btn" type="button">3</button>
+      <button class="btn" type="button">4</button>
+      <button class="btn" type="button">5</button>
+      <button class="btn" type="button">6</button>
+      <button class="btn" type="button">7</button>
+      <button class="btn" type="button">8</button>
+      <button class="btn" type="button">9</button>
+      <button class="btn" type="button">0</button>
+      <button class="btn btn-del" type="button">
+        <span class="blind">삭제</span>
+      </button>
+    </div>
+    <div class="btn-box">
+      <!-- [D] 버튼이 클릭되면 active 클래스 추가 -->
+      <button type="button" class="btn active">취소</button>
+      <button type="button" class="btn">다음</button>
+    </div>
+  </div>
+</body>
+</html>

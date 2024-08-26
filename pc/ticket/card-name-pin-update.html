@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wavve(웨이브)</title>
+    <meta name="description" content="세상 얕은 콘텐츠부터 세상 딥한 콘텐츠까지 JUST DIVE! Wavve">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/ticket.css">
+</head>
+<body>
+	<div class="ticket-popup-wrap">
+		<h1 class="popup-header">빠른결제 카드 관리</h1>
+		<div class="popup-body">
+			<div class="popup-content">
+				<div class="popup-top">
+					<p>
+                        <span>변경할 카드 별칭과 PIN 번호를 입력해주세요.</span>
+                    </p>
+				</div>
+
+				<div class="name-pin-box">
+                    <h2 class="blind">빠른결제 별칭, PIN 입력 영역</h2>
+                    <span class="popup-my-name">
+                        <label for="">별칭</label>
+                        <input id="" type="text" title="별칭 입력영역" placeholder="최소 1자 최대 10자">
+                    </span>
+                    <span class="popup-my-pin">
+                        <label for="">PIN 번호</label>
+                        <input id="" type="password" title="PIN 번호 입력영역" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                    </span>
+                    <span class="popup-my-pin">
+                        <label for="">PIN 번호 확인</label>
+                        <input id="" type="password" title="PIN 번호 확인 입력영역" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                    </span>
+				</div>
+			</div><!--popup-content//-->
+			<ul class="popup-btn-wrap">
+                <li><button @click="showModal = false" class="btn-br-gray">취소</button></li>
+				<li><button class="btn-fill-purple">다음</button></li>
+			</ul>
+		</div>
+		<div class="popup-noti">
+            <p class="dot-text"><span>Wavve에서는 고객님의 카드정보 일체를 보관하지 않으며, 전자결제대행사 ‘페이레터㈜’를 통해 안전하게 관리됩니다.</span></p>
+            <p class="dot-text"><span>PIN 번호 설정 시 안전한 결제를 위해 연속된 숫자 3자리, 동일한 숫자 3자리 및 생년월일 등 유추가능한 개인정보는 제외하여 설정해주세요.</span></p>
+        </div>
+	</div>
+</body>
+</html>
+
